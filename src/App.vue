@@ -1,27 +1,35 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import { RouterLink, RouterView } from 'vue-router'
+// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Welcome</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <router-link to="/" class="nav-link">Home</router-link>
+          <router-link to="/Login" class="nav-link">Login</router-link>
+          <router-link to="/Signup" class="nav-link">Signup</router-link>
+          <router-link to="/Logout" class="nav-link">Logout</router-link>
+          <!-- <router-link to="/forgot" class="nav-link">Forgot</router-link> -->
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+          <routerView></routerView> 
+        </div>
+       
+      </div>
     </div>
-  </header>
-
-  <RouterView />
+  </nav>
+  </div>
 </template>
 
 <style scoped>
-header {
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -81,5 +89,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>
