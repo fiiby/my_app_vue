@@ -14,11 +14,12 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <router-link to="/" class="nav-link">Home</router-link>
-          <router-link to="/Signup" class="nav-link">Signup</router-link>
+
           <router-link to="/Login" class="nav-link">Login</router-link>
+          <router-link to="/Signup" class="nav-link">Signup</router-link>
           <router-link to="/Logout" class="nav-link">Logout</router-link>
-          
-          
+          <!-- <router-link to="/forgot" class="nav-link">Forgot</router-link> -->
+
 
           <routerView></routerView> 
         </div>
